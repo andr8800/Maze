@@ -1,6 +1,6 @@
 # Maze
 
-This is a maze game built using HTML, CSS, and JavaScript. The player's goal is to navigate through the maze by moving the cursor using either the mouse the face tracking cursor. If you scroll below the generated maze, you will see your face movements being tracked and displayed as a series of numbers which represent specific facial landmarks. These landmarks are whats used to predict where the facetracking cursor should be on the screen based on your movements. 
+This is a maze game built using HTML, CSS, and JavaScript. The player's goal is to navigate through the maze by moving the cursor using either the mouse the face tracking cursor. If you scroll below the generated maze, you will see your face movements being tracked and displayed as a series of numbers which represent specific facial landmarks. These landmarks are whats used to predict where the facetracking cursor should be on the screen based on your movements. This project was easily one of the most interesting as well as difficult projects I've worked on. I learned so much about not only HTML, CSS, and JS, but also about some of the algorithms used in face tracking, how the face tracking works, some of the ways tracking can be implemented, and more. The potential accessibility benefits that come along with something like face tracking also made it more rewarding to work with.
 
 ## Getting Started
 
