@@ -19,5 +19,4 @@ To run the maze game locally on your machine, follow these steps:
 You can customize the maze by modifying the HTML and CSS code. The maze layout, colors, and styling can be adjusted to your preference. The blinkmaze.html page controlls how big you want the maze to be.
 
 ## Acknowledgements
-- The maze game was created as a learning project based on tutorials and examples from various online resources.
 - The game utilizes the Handsfree.js library for cursor tracking, which can be found at [https://handsfree.js.org/](https://handsfree.js.org/).
