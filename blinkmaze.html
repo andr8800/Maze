@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<title>Maze</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="blinkmaze.js"></script>
+<style type="text/css">
+#maze {
+    border-collapse: collapse;
+}
+
+#maze td {
+    width: 100px;
+    height: 100px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8" />
+</head>
+<body>
+    <body>
+        <script src="https://unpkg.com/handsfree@4.0.3/dist/handsfree.js"></script>
+        <script src="blinkmaze.js"></script>
+      </body>
+      <head>Try to move your cursor through the maze without hitting a border!</head>
+    <div class="button-container">
+        <button class="start-button" onclick="myHandsfree.start()" onkeydown="if (event.keyCode === 32) myHandsfree.start()">Start</button>
+    </div>
+<table id="maze">
+<tbody></tbody>
+</table>
+<div id="maze-container">   
+<script>
+    var disp = newMaze(8,8);
+    for (var i = 0; i < disp.length; i++) {
+        $('#maze > tbody').append("<tr>");
+        for (var j = 0; j < disp[i].length; j++) {
+            var selector = i+"-"+j;
+            $('#maze > tbody').append("<td id='"+selector+"'>&nbsp;</td>");
+            if (disp[i][j][0] == 0) { $('#'+selector).css('border-top', '3px solid black'); }
+            if (disp[i][j][1] == 0) { $('#'+selector).css('border-right', '3px solid black'); }
+            if (disp[i][j][2] == 0) { $('#'+selector).css('border-bottom', '3px solid black'); }
+            if (disp[i][j][3] == 0) { $('#'+selector).css('border-left', '3px solid black'); }
+        }
+        $('#maze > tbody').append("</tr>");
+    }
+</script>
+</div>
+</body>
+</html>
